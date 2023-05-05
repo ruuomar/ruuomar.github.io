@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1{
+            text-align:center;
+        }
+        body{background-color:blue;}
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CONTACT US</h1><hr>
+    <script>
+           let contacts=JSON.parse(localStorage.getItem('contacts')) || [];
+                 
+            let contactinfo="";
+                   for(let i =0; i<contacts.length;i++){
+                     contactinfo += "<h1>contact #" +(i+1)+ "</h1>";
+                     contactinfo += "<p>name " +contacts[i].name + "</p>";
+                     contactinfo += "<p>address " +contacts[i].address + "</p>";
+                     contactinfo +=" <p>email" +contacts[i].email + "</p>";
+                    contactinfo += "<p>comment" +contacts[i].Comment + "</p>";
+                    
+                   };
+                  document.getElementById("info").values;  
+                  console.log("hello")    
+    </script>     
+</body>
+
+
+</html>

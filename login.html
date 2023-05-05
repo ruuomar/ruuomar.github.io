@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"type="text/css"href="loginform.css">
+</head>
+<body>
+    <div id="box">
+    <form id="fom">
+            <h1>Login</h1><br>
+    
+        <input type="text" placeholder="username" id="username"><br><br>
+        <input type="text" placeholder="password" id="password"><br><br>
+        <input type="checkbox">Remember me
+        <center><button id="submit">submit</button></center>
+    </form>
+        </div>
+    <div id="info"></div>
+</body>
+<script>
+    
+    let contactinf=document.getElementById("fom");
+  
+    contactinf.addEventListener("submit",function(event){
+        event.preventDefault();
+        
+        let username=document.getElementById("username").value;
+        let password=document.getElementById("password").value;
+       
+        if(username === "admin" && password === "password"){
+            let contacts=JSON.parse(localStorage.getItem('contacts')) || [];
+           
+            let contactinfo="";
+            for(let i =0; i<contacts.length;i++){
+                contactinfo += "<h1>contact #" +(i+1)+ "</h1>";
+                contactinfo += "<p>name " +contacts[i].name + "</p>";
+                contactinfo += "<p>address " +contacts[i].address + "</p>";
+                contactinfo +=" <p>email" +contacts[i].email + "</p>";
+                contactinfo += "<p>comment" +contacts[i].Comment + "</p>";
+                console.log("hello")
+            };
+            document.getElementById("info").innerHTML=contactinfo;      
+        }
+        else{
+            alert("invalid usename or password");
+        
+        }
+        contactinf.reset();
+
+    })
+
+    
+</script>
+</html>

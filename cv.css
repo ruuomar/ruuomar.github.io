@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navigation */
+nav{
+    height: 40px;
+    background-color: black;
+    color: white;
+    width: 400px;
+    display: inline;
+}
+main{
+    padding: 20px;
+    
+}
+.about{
+    background-color: rgb(217, 217, 227);
+   display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+}
+.edu{
+    background-color: rgb(217, 217, 227);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
+    padding: 10px;
+
+}
+.Work{background-color: rgb(217, 217, 227);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+
+}
+.education{
+    background-color: rgb(217, 217, 227);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+}
+.test{
+    background-color: rgb(236, 244, 243);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+table,th,td{
+    border:1px solid black;
+    padding: 5px;
+    margin: 5px;
+    border-collapse:collapse;
+    
+}
+.test table{
+    border:1px solid black;
+    padding: 5px;
+    margin: 5px;
+    border-collapse:collapse;
+    
+}
+.course{background-color: rgb(236, 244, 243);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+
+}
+.as{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(131, 144, 147);
+    padding: 10px;
+
+}
+.as .map{
+    height: 250px;
+    width: 500px;
+    background-color: white;
+    padding: 20px;
+}
+.as form{
+    float: left;
+    margin-top: 20px;
+    
+    
+}
+.name .address .email .comment{
+    width: 250px;
+    height: 40px;
+}
+#contactform{
+padding: 5px;
+width:300px ;
+justify-content: center;
+height: 300px;
+border:  2px solid black;
+float: left;
+margin: 10%;
+background-color: transparent;
+}
+
+a:link, a:visited {
+    background-color:black;
+    color: white;
+    padding: 10px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: rgb(8, 8, 8);
+  }
